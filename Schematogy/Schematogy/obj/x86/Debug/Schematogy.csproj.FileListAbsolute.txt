@@ -1,0 +1,6 @@
+C:\Users\Paul\Documents\GitHub\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Schematogy.exe
+C:\Users\Paul\Documents\GitHub\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Schematogy.pdb
+C:\Users\Paul\Documents\GitHub\Schematogy\Schematogy\Schematogy\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Paul\Documents\GitHub\Schematogy\Schematogy\Schematogy\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Paul\Documents\GitHub\Schematogy\Schematogy\Schematogy\obj\x86\Debug\Schematogy.exe
+C:\Users\Paul\Documents\GitHub\Schematogy\Schematogy\Schematogy\obj\x86\Debug\Schematogy.pdb
