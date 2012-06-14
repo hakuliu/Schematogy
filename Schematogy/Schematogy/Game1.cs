@@ -20,11 +20,15 @@ namespace Schematogy
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        MouseState mouse;
+        Texture2D mousePic;
+        UI.WindowFrame window;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            window = new UI.WindowFrame();
         }
 
         /// <summary>
@@ -38,6 +42,10 @@ namespace Schematogy
             // TODO: Add your initialization logic here
 
             base.Initialize();
+
+            graphics.PreferredBackBufferWidth = 1920;
+            graphics.PreferredBackBufferHeight = 1200;
+            graphics.ApplyChanges();
         }
 
         /// <summary>
@@ -48,8 +56,8 @@ namespace Schematogy
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            // TODO: use this.Content to load your game content here
+            mousePic = Content.Load<Texture2D>("Mouse_Farewell_by_nJoo");
+            UI.UIContentManager.getInstance().LoadContents(Content);
         }
 
         /// <summary>
@@ -59,6 +67,7 @@ namespace Schematogy
         protected override void UnloadContent()
         {
             // TODO: Unload any non ContentManager content here
+            Content.Unload();
         }
 
         /// <summary>
@@ -73,6 +82,7 @@ namespace Schematogy
                 this.Exit();
 
             // TODO: Add your update logic here
+            mouse = Mouse.GetState();
 
             base.Update(gameTime);
         }
@@ -86,7 +96,10 @@ namespace Schematogy
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
-
+            spriteBatch.Begin();
+            window.Draw(gameTime, spriteBatch);
+            spriteBatch.Draw(mousePic, new Rectangle(mouse.X - 25, mouse.Y - 25, 32, 64), Color.White);
+            spriteBatch.End();
             base.Draw(gameTime);
         }
     }
