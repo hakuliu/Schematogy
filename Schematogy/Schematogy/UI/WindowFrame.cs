@@ -4,18 +4,21 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Schematogy.Util;
 
 namespace Schematogy.UI
 {
-    class WindowFrame : Util.Drawable
+    class WindowFrame : Util.Drawable, Util.Locatable
     {
 
         #region Drawable Members
 
 
+        private static const Rectangle minSize = new Rectangle(0, 0, 32 * 2, 32 * 2);
+
         //test values, will be included in locatable soon.
-        int x = 50;
-        int y = 50;
+        private Location2i loc;
+        private Rectangle boundary;
 
 
         public void Draw(Microsoft.Xna.Framework.GameTime game, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch)
@@ -35,5 +38,21 @@ namespace Schematogy.UI
         }
 
         #endregion
+
+        #region Locatable Members
+
+        public Schematogy.Util.Location2i Loc
+        {
+            get { return loc;  }
+        }
+
+        #endregion
+
+        public WindowFrame()
+        {
+            loc = new Location2i(50, 50);
+        }
+
+        
     }
 }

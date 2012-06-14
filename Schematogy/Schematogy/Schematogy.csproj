@@ -91,6 +91,8 @@
     <Compile Include="UI\WindowFrame.cs" />
     <Compile Include="Util\Drawable.cs" />
     <Compile Include="Util\IsAContentManager.cs" />
+    <Compile Include="Util\Locatable.cs" />
+    <Compile Include="Util\Location2i.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
