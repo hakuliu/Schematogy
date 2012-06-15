@@ -15,6 +15,7 @@ namespace Schematogy.UI
 
 
         private static Rectangle minSize = new Rectangle(0, 0, 32 * 2, 32 * 2);
+        private LookAndFeel lnf;
 
 
         public void Draw(Microsoft.Xna.Framework.GameTime game, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch)
@@ -32,6 +33,14 @@ namespace Schematogy.UI
             spriteBatch.Draw(kitteh, new Rectangle(bounds.X + 32 + 128, bounds.Y + 32 + 64, 32, 32), Color.White);
             spriteBatch.Draw(kitteh, new Rectangle(bounds.X + 32 + 128, bounds.Y + 32, 32, 64), Color.White);
 
+            try
+            {
+                lnf.drawBorder(spriteBatch, bounds);
+            }
+            catch (NotImplementedException e)
+            {
+                Console.WriteLine("You haven't implemented lnf yet!");
+            }
         }
 
         #endregion
@@ -39,14 +48,13 @@ namespace Schematogy.UI
         public WindowFrame()
         {
             Bounds = new Rectangle(50, 50, 200, 100);
+            this.SetLookAndFeel(new BasicLookAndFeel());
         }
 
-
-        private void DrawTopLeft()
+        public void SetLookAndFeel(LookAndFeel feel)
         {
+            this.lnf = feel;
         }
-
-        
         
     }
 }
