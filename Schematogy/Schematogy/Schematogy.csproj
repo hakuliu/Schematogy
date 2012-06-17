@@ -93,6 +93,7 @@
     <Compile Include="Game1.cs" />
     <Compile Include="UI\BasicLookAndFeel.cs" />
     <Compile Include="UI\Component.cs" />
+    <Compile Include="UI\ComponentListener.cs" />
     <Compile Include="UI\Container.cs" />
     <Compile Include="UI\LookAndFeel.cs" />
     <Compile Include="UI\UIContentManager.cs" />
