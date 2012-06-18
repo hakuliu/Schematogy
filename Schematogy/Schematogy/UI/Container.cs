@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework;
 
 namespace Schematogy.UI
 {
-    abstract class Container
+    abstract class Container : Util.Updatable
     {
         protected Rectangle bounds;
 
@@ -18,5 +18,11 @@ namespace Schematogy.UI
             get { return bounds; }
             set { bounds = value; }
         }
+
+        #region Updatable Members
+
+        public abstract void Update(GameTime gameTime);
+
+        #endregion
     }
 }

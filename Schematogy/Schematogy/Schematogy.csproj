@@ -102,6 +102,8 @@
     <Compile Include="Util\IsAContentManager.cs" />
     <Compile Include="Util\Locatable.cs" />
     <Compile Include="Util\Location2i.cs" />
+    <Compile Include="Util\Updatable.cs" />
+    <Compile Include="Util\UserInputCenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

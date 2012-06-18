@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Schematogy.Util;
+using Microsoft.Xna.Framework.Input;
 
 namespace Schematogy.UI
 {
@@ -16,6 +17,22 @@ namespace Schematogy.UI
 
         private static Rectangle minSize = new Rectangle(0, 0, 32 * 2, 32 * 2);
         private LookAndFeel lnf;
+
+        //the following are for moving the window.
+        //from the top left of the bounds.
+        Rectangle movableBounds = new Rectangle(0, 0, 32, 32);
+        private bool isInMovableBounds(int x, int y)
+        {
+            Rectangle realBound = new Rectangle(bounds.X + movableBounds.X, bounds.Y + movableBounds.Y, movableBounds.Width, movableBounds.Height);
+            if (x >= this.bounds.X && x <= this.bounds.X + bounds.Width)
+            {
+                if (y >= bounds.Y && y <= bounds.Y + bounds.Height)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
 
         public void Draw(Microsoft.Xna.Framework.GameTime game, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch)
@@ -39,7 +56,7 @@ namespace Schematogy.UI
             }
             catch (NotImplementedException e)
             {
-                Console.WriteLine("You haven't implemented lnf yet!");
+                //Console.WriteLine("You haven't implemented lnf yet!");
             }
         }
 
@@ -55,6 +72,19 @@ namespace Schematogy.UI
         {
             this.lnf = feel;
         }
-        
+
+
+        public override void Update(GameTime gameTime)
+        {
+            MouseState mouse = Util.UserInputCenter.mouse;
+            if (mouse.LeftButton == ButtonState.Pressed)
+            {
+                
+                if (isInMovableBounds(mouse.X, mouse.Y))
+                {
+                    Console.WriteLine("moving!");
+                }
+            }
+        }
     }
 }

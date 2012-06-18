@@ -81,6 +81,7 @@ namespace Schematogy
 
             // TODO: Add your update logic here
             mouse = Mouse.GetState();
+            window.Update(gameTime);
             
             base.Update(gameTime);
         }
@@ -96,7 +97,7 @@ namespace Schematogy
             // TODO: Add your drawing code here
             spriteBatch.Begin();
             window.Draw(gameTime, spriteBatch);
-            spriteBatch.Draw(mousePic, new Rectangle(mouse.X - 25, mouse.Y - 25, 32, 64), Color.White);
+            spriteBatch.Draw(mousePic, new Rectangle(mouse.X, mouse.Y, 32, 64), Color.White);
             spriteBatch.End();
             base.Draw(gameTime);
         }
