@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Net;
 using Microsoft.Xna.Framework.Storage;
+using Schematogy.UI;
 
 namespace Schematogy
 {
@@ -78,6 +79,7 @@ namespace Schematogy
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            InputHandler.Instance.Update(gameTime);
             Util.UserInputCenter.Update(this);
 
             // TODO: Add your update logic here

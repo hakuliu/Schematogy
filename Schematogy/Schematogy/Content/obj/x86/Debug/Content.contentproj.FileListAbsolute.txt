@@ -1,1 +1,2 @@
 C:\Users\Paul\Documents\GitHub\Schematogy\Schematogy\Schematogy\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\Content\obj\x86\Debug\ResolveAssemblyReference.cache

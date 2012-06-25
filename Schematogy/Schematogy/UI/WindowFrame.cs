@@ -18,9 +18,6 @@ namespace Schematogy.UI
         private static Rectangle minSize = new Rectangle(0, 0, 32 * 2, 32 * 2);
         private LookAndFeel lnf;
 
-        //the following are for moving the window.
-        //from the top left of the bounds.
-        Rectangle movableBounds = new Rectangle(0, 0, 32, 32);
         private bool isInMovableBounds(int x, int y)
         {
             Rectangle realBound = new Rectangle(bounds.X + movableBounds.X, bounds.Y + movableBounds.Y, movableBounds.Width, movableBounds.Height);
@@ -62,9 +59,17 @@ namespace Schematogy.UI
 
         #endregion
 
+        
+        //the following are for moving the window.
+        //from the top left of the bounds.
+        Rectangle movableBounds = new Rectangle(0, 0, 200, 100);
+        bool moving = false;
+
         public WindowFrame()
         {
             Bounds = new Rectangle(50, 50, 200, 100);
+            GameEventManager.Instance.addHandler<MouseEvent>(new GameEventHandler<MouseEvent>(mouseEventHandler, 1));
+            GameEventManager.Instance.addHandler<MouseMotionEvent>(new GameEventHandler<MouseMotionEvent>(mouseMotionEventHandler, 1));
             this.SetLookAndFeel(new BasicLookAndFeel());
         }
 
@@ -85,6 +90,29 @@ namespace Schematogy.UI
                     Console.WriteLine("moving!");
                 }
             }
+        }
+        private bool mouseMotionEventHandler(MouseMotionEvent e)
+        {
+            if (moving)
+            {
+                this.Bounds = new Rectangle(this.Bounds.X + e.DX, this.Bounds.Y + e.DY, this.Bounds.Width, this.Bounds.Height);
+            }
+            return false;
+        }
+        private bool mouseEventHandler(MouseEvent e)
+        {
+            if (e.Pressed == ButtonState.Pressed)
+            {
+                if(!moving && isInMovableBounds(e.X, e.Y))
+                {
+                    moving = true;
+                }
+            }
+            else
+            {
+                moving = false;
+            }
+            return false;
         }
     }
 }

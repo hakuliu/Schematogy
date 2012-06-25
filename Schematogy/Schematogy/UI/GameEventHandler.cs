@@ -20,8 +20,8 @@ namespace Schematogy.UI
     {
         private int priority;
         private HandlerDelegate<T> del;
-        private HandlerDelegate<MouseEvent> handlerDelegate;
-        private int p;
+        
+        
 
         int Priority
         {
@@ -33,12 +33,6 @@ namespace Schematogy.UI
             this.del = handler;
         }
 
-        public GameEventHandler(HandlerDelegate<MouseEvent> handlerDelegate, int p)
-        {
-            // TODO: Complete member initialization
-            this.handlerDelegate = handlerDelegate;
-            this.p = p;
-        }
         public bool fire(T e)
         {
             if (del != null)
