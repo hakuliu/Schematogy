@@ -95,6 +95,7 @@
     <Compile Include="UI\Component.cs" />
     <Compile Include="UI\ComponentListener.cs" />
     <Compile Include="UI\Container.cs" />
+    <Compile Include="UI\Draggable.cs" />
     <Compile Include="UI\GameEvent.cs" />
     <Compile Include="UI\GameEventHandler.cs" />
     <Compile Include="UI\GameEventManager.cs" />

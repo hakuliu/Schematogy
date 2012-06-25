@@ -112,10 +112,7 @@ namespace Schematogy.UI
                 //should be done in sorted order.
                 foreach (GameEventHandler<T> h in queue)
                 {
-                    if (h.fire(e))
-                    {
-                        break;
-                    }
+                    h.fire(e);
                 }
             }
         }

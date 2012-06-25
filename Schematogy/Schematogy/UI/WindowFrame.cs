@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Schematogy.UI
 {
-    class WindowFrame : Container, Util.Drawable
+    class WindowFrame : Container, Util.Drawable, UI.Draggable
     {
 
         #region Drawable Members
@@ -68,8 +68,7 @@ namespace Schematogy.UI
         public WindowFrame()
         {
             Bounds = new Rectangle(50, 50, 200, 100);
-            GameEventManager.Instance.addHandler<MouseEvent>(new GameEventHandler<MouseEvent>(mouseEventHandler, 1));
-            GameEventManager.Instance.addHandler<MouseMotionEvent>(new GameEventHandler<MouseMotionEvent>(mouseMotionEventHandler, 1));
+            this.setupListeners();
             this.SetLookAndFeel(new BasicLookAndFeel());
         }
 
@@ -91,28 +90,60 @@ namespace Schematogy.UI
                 }
             }
         }
-        private bool mouseMotionEventHandler(MouseMotionEvent e)
+
+        #region Draggable Members
+
+        public Rectangle MovableBounds
         {
-            if (moving)
+            get { return movableBounds; }
+        }
+
+        public Rectangle MovingBounds
+        {
+            set { this.bounds = value; }
+        }
+
+        public bool Moving
+        {
+            get
+            {
+                return moving;
+            }
+            set
+            {
+                moving = value;
+            }
+        }
+
+        public void handleDraggableMouseMotionEvent(MouseMotionEvent e)
+        {
+            if (Moving)
             {
                 this.Bounds = new Rectangle(this.Bounds.X + e.DX, this.Bounds.Y + e.DY, this.Bounds.Width, this.Bounds.Height);
             }
-            return false;
         }
-        private bool mouseEventHandler(MouseEvent e)
+
+        public void handleDraggableMouseEvent(MouseEvent e)
         {
             if (e.Pressed == ButtonState.Pressed)
             {
-                if(!moving && isInMovableBounds(e.X, e.Y))
+                if (!Moving && isInMovableBounds(e.X, e.Y))
                 {
-                    moving = true;
+                    Moving = true;
                 }
             }
             else
             {
-                moving = false;
+                Moving = false;
             }
-            return false;
         }
+
+        public void setupListeners()
+        {
+            GameEventManager.Instance.addHandler<MouseEvent>(new GameEventHandler<MouseEvent>(handleDraggableMouseEvent));
+            GameEventManager.Instance.addHandler<MouseMotionEvent>(new GameEventHandler<MouseMotionEvent>(handleDraggableMouseMotionEvent));
+        }
+
+        #endregion
     }
 }

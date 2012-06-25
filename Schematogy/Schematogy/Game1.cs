@@ -83,7 +83,7 @@ namespace Schematogy
             Util.UserInputCenter.Update(this);
 
             // TODO: Add your update logic here
-            mouse = Mouse.GetState();
+            mouse = Util.UserInputCenter.mouse;
             window.Update(gameTime);
             
             base.Update(gameTime);
