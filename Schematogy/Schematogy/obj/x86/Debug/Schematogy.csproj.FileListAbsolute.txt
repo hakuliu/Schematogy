@@ -12,3 +12,7 @@ C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\obj\x86\Deb
 C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Mouse_Farewell_by_nJoo.xnb
 C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Schematogy.exe
 C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Schematogy.pdb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Button Resistor blanked out.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Button Resistor clicked on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Button Resistor hover over on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Button Resistor regular.xnb

@@ -33,6 +33,12 @@ namespace Schematogy.UI
         public void LoadContents(Microsoft.Xna.Framework.Content.ContentManager Content)
         {
             textureCache.Add("rawr", Content.Load<Texture2D>("Mouse_Farewell_by_nJoo"));
+
+            textureCache.Add("ResistorButtonIdle", Content.Load<Texture2D>("Button Resistor regular"));
+            textureCache.Add("ResistorButtonHover", Content.Load<Texture2D>("Button Resistor hover over on"));
+            textureCache.Add("ResistorButtonPressed", Content.Load<Texture2D>("Button Resistor clicked on"));
+
+
         }
 
         public void UnloadContents(Microsoft.Xna.Framework.Content.ContentManager Content)

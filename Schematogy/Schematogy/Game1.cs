@@ -25,12 +25,23 @@ namespace Schematogy
         MouseState mouse;
         Texture2D mousePic;
         UI.WindowFrame window;
+        Button testButton;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             window = new UI.WindowFrame();
+
+            testButton = new Button();
+            testButton.Bound = new Rectangle(500, 500, 100, 100);
+            testButton.Enabled = true;
+            testButton.HoverEnabled = true;
+            testButton.PressDownEnabled = true;
+            testButton.IdleTexture = "ResistorButtonIdle";
+            testButton.HoverTexture = "ResistorButtonHover";
+            testButton.PressetTexture = "ResistorButtonPressed";
+
         }
 
         /// <summary>
@@ -81,7 +92,7 @@ namespace Schematogy
         {
             InputHandler.Instance.Update(gameTime);
             Util.UserInputCenter.Update(this);
-
+            testButton.Update(gameTime);
             // TODO: Add your update logic here
             mouse = Util.UserInputCenter.mouse;
             window.Update(gameTime);
@@ -100,6 +111,9 @@ namespace Schematogy
             // TODO: Add your drawing code here
             spriteBatch.Begin();
             window.Draw(gameTime, spriteBatch);
+            
+            testButton.Draw(gameTime, spriteBatch);
+
             spriteBatch.Draw(mousePic, new Rectangle(mouse.X, mouse.Y, 32, 64), Color.White);
             spriteBatch.End();
             base.Draw(gameTime);
