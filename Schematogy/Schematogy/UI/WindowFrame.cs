@@ -37,15 +37,6 @@ namespace Schematogy.UI
             Rectangle bounds = Bounds;
             Texture2D kitteh = UIContentManager.getInstance().getTexture("rawr");
 
-            //delete this later and use the methods.
-            spriteBatch.Draw(kitteh, new Rectangle(bounds.X, bounds.Y, 32, 32), Color.White);
-            spriteBatch.Draw(kitteh, new Rectangle(bounds.X + 32, bounds.Y, 128, 32), Color.White);
-            spriteBatch.Draw(kitteh, new Rectangle(bounds.X + 32 + 128, bounds.Y, 32, 32), Color.White);
-            spriteBatch.Draw(kitteh, new Rectangle(bounds.X, bounds.Y + 32, 32, 64), Color.White);
-            spriteBatch.Draw(kitteh, new Rectangle(bounds.X, bounds.Y + 32 + 64, 32, 32), Color.White);
-            spriteBatch.Draw(kitteh, new Rectangle(bounds.X + 32, bounds.Y + 32 + 64, 128, 32), Color.White);
-            spriteBatch.Draw(kitteh, new Rectangle(bounds.X + 32 + 128, bounds.Y + 32 + 64, 32, 32), Color.White);
-            spriteBatch.Draw(kitteh, new Rectangle(bounds.X + 32 + 128, bounds.Y + 32, 32, 64), Color.White);
 
             try
             {
@@ -67,7 +58,7 @@ namespace Schematogy.UI
 
         public WindowFrame()
         {
-            Bounds = new Rectangle(50, 50, 200, 100);
+            Bounds = new Rectangle(50, 50, 500, 800);
             this.setupListeners();
             this.SetLookAndFeel(new BasicLookAndFeel());
         }

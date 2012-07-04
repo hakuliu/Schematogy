@@ -13,9 +13,9 @@ namespace Schematogy.UI
 
         private bool hoverEnabled = false;
         private bool pressDownEnabled = false;
-        private String idleTexture;
-        private String hoverTexture;
-        private String pressedTexture;
+        private String idleTexture = "MissingImageButton";
+        private String hoverTexture = "MissingImageButton";
+        private String pressedTexture = "MissingImageButton";
 
         private enum MyButtonState { Idle, Hover, Pressed };
         private MyButtonState imgState;
@@ -31,11 +31,11 @@ namespace Schematogy.UI
 
         private void handleButtonMouseAction(MouseEvent e)
         {
-            if (this.PressDownEnabled && e.Pressed == Microsoft.Xna.Framework.Input.ButtonState.Pressed)
+            if (this.PressDownEnabled && e.Pressed == Microsoft.Xna.Framework.Input.ButtonState.Pressed && isInBounds(e.X, e.Y))
             {
                 imgState = MyButtonState.Pressed;
             }
-            else if(this.HoverEnabled)
+            else if(this.HoverEnabled && isInBounds(e.X, e.Y))
             {
                 imgState = MyButtonState.Hover;
             }
@@ -43,7 +43,6 @@ namespace Schematogy.UI
             {
                 imgState = MyButtonState.Idle;
             }
-
         }
         private void handleButtonMouseMotionAction(MouseMotionEvent e) 
         {

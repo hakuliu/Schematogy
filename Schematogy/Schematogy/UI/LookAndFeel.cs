@@ -20,16 +20,15 @@ namespace Schematogy.UI
 
         public void drawBorder(Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds)
         {
+            this.DrawCenter(spriteBatch, bounds);
             this.DrawBot(spriteBatch, bounds);
-            this.DrawBotLeft(spriteBatch, bounds);
-            this.DrawBotRight(spriteBatch, bounds);
             this.DrawLeft(spriteBatch, bounds);
             this.DrawRight(spriteBatch, bounds);
             this.DrawTop(spriteBatch, bounds);
             this.DrawTopLeft(spriteBatch, bounds);
             this.DrawTopRight(spriteBatch, bounds);
-            this.DrawCenter(spriteBatch, bounds);
-
+            this.DrawBotLeft(spriteBatch, bounds);
+            this.DrawBotRight(spriteBatch, bounds);
         }
     }
 }
