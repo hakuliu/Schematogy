@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework.Graphics;
+using Schematogy.Util;
+using Microsoft.Xna.Framework;
 
 namespace Schematogy.UI
 {
@@ -23,35 +25,39 @@ namespace Schematogy.UI
         }
         public UIContentManager()
         {
-            textureCache = new Dictionary<string, Texture2D>();
+            spriteCache = new Dictionary<string, SpriteContent>();
         }
 
-        Dictionary<String, Texture2D> textureCache;
+        Dictionary<String, SpriteContent> spriteCache;
 
         #region UsesContentManger Members
 
         public void LoadContents(Microsoft.Xna.Framework.Content.ContentManager Content)
         {
-            textureCache.Add("rawr", Content.Load<Texture2D>("Mouse_Farewell_by_nJoo"));
+            spriteCache.Add("rawr", new SpriteContent(Content.Load<Texture2D>("UI/Mouse_Farewell_by_nJoo")));
+            spriteCache.Add("mouse", new SpriteContent(Content.Load<Texture2D>("UI/Cursor mouse")));
 
-            textureCache.Add("ResistorButtonIdle", Content.Load<Texture2D>("Button Resistor regular"));
-            textureCache.Add("ResistorButtonHover", Content.Load<Texture2D>("Button Resistor hover over on"));
-            textureCache.Add("ResistorButtonPressed", Content.Load<Texture2D>("Button Resistor clicked on"));
 
-            textureCache.Add("CornerChunkUpperLeft", Content.Load<Texture2D>("Corner Chunk lower left"));//Content.Load<Texture2D>("Corner Chunk up right"));
-            textureCache.Add("CornerChunkUpperRight", Content.Load<Texture2D>("Corner Chunk lower left"));//Content.Load<Texture2D>("Corner Chunk upper right"));
-            textureCache.Add("CornerChunkLowerLeft", Content.Load<Texture2D>("Corner Chunk lower left"));
-            textureCache.Add("CornerChunkLowerRight", Content.Load<Texture2D>("Corner Chunk lower left"));//Content.Load<Texture2D>("Corner Chunk lower right"));
+            spriteCache.Add("ResistorButtonIdle", new SpriteContent(Content.Load<Texture2D>("Button Resistor regular")));
+            spriteCache.Add("ResistorButtonHover", new SpriteContent(Content.Load<Texture2D>("Button Resistor hover over on")));
+            spriteCache.Add("ResistorButtonPressed", new SpriteContent(Content.Load<Texture2D>("Button Resistor clicked on")));
 
-            textureCache.Add("BorderChunkBottom", Content.Load<Texture2D>("Border Chunk bottom"));
-            textureCache.Add("BorderChunkLeft", Content.Load<Texture2D>("Border Chunk Left"));
-            textureCache.Add("BorderChunkRight", Content.Load<Texture2D>("Border Chunk Right"));
-            textureCache.Add("BorderChunkTop", Content.Load<Texture2D>("Border Chunk top"));
+            spriteCache.Add("CornerChunkUpperLeft", new SpriteContent(Content.Load<Texture2D>("UI/Corner Chunk up right")));
+            spriteCache.Add("CornerChunkUpperRight", new SpriteContent(Content.Load<Texture2D>("UI/Corner Chunk upper right")));
+            spriteCache.Add("CornerChunkLowerLeft", new SpriteContent(Content.Load<Texture2D>("UI/Corner Chunk lower left4")));
+            spriteCache.Add("CornerChunkLowerRight", new SpriteContent(Content.Load<Texture2D>("UI/Corner Chunk lower right")));
 
-            textureCache.Add("BigChunk", Content.Load<Texture2D>("BIG CHUNK"));
+            spriteCache.Add("BorderChunkBottom", new SpriteContent(Content.Load<Texture2D>("UI/Border Chunk bottom")));
+            spriteCache.Add("BorderChunkLeft", new SpriteContent(Content.Load<Texture2D>("UI/Border Chunk Left")));
+            spriteCache.Add("BorderChunkRight", new SpriteContent(Content.Load<Texture2D>("UI/Border Chunk Right")));
+            spriteCache.Add("BorderChunkTop", new SpriteContent(Content.Load<Texture2D>("UI/Border Chunk top")));
 
-            textureCache.Add("MissingImageButton", Content.Load<Texture2D>("NO BUTTON PAUL"));
+            spriteCache.Add("BigChunk", new SpriteContent(Content.Load<Texture2D>("UI/BIG CHUNK")));
 
+            spriteCache.Add("MissingImageButton", new SpriteContent(Content.Load<Texture2D>("UI/NO BUTTON PAUL")));
+
+
+            
         }
 
         public void UnloadContents(Microsoft.Xna.Framework.Content.ContentManager Content)
@@ -63,9 +69,9 @@ namespace Schematogy.UI
 
         #endregion
 
-        public Texture2D getTexture(String key)
+        public SpriteContent getTexture(String key)
         {
-            return textureCache[key];
+            return spriteCache[key];
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Schematogy.Util;
 
 namespace Schematogy.UI
 {
@@ -83,7 +84,7 @@ namespace Schematogy.UI
 
         public override void Draw(GameTime game, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch)
         {
-            Texture2D imgToDraw = UIContentManager.getInstance().getTexture(IdleTexture);
+            SpriteContent imgToDraw = UIContentManager.getInstance().getTexture(IdleTexture);
             if (imgState == MyButtonState.Idle)
             {
                 imgToDraw = UIContentManager.getInstance().getTexture(IdleTexture);
@@ -96,8 +97,7 @@ namespace Schematogy.UI
             {
                 imgToDraw = UIContentManager.getInstance().getTexture(PressetTexture);
             }
-
-            spriteBatch.Draw(imgToDraw, Bound, Color.White); 
+            imgToDraw.Draw(game, spriteBatch, Bound);
         }
     }
 }

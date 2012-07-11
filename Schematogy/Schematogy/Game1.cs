@@ -11,6 +11,7 @@ using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Net;
 using Microsoft.Xna.Framework.Storage;
 using Schematogy.UI;
+using Schematogy.Util;
 
 namespace Schematogy
 {
@@ -23,10 +24,10 @@ namespace Schematogy
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         MouseState mouse;
-        Texture2D mousePic;
+        SpriteContent mousePic;
         UI.WindowFrame window;
         Button testButton;
-
+        bool rawr = false;
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -56,8 +57,8 @@ namespace Schematogy
 
             base.Initialize();
 
-            graphics.PreferredBackBufferWidth = 1920;
-            graphics.PreferredBackBufferHeight = 1200;
+            graphics.PreferredBackBufferWidth = 1600;
+            graphics.PreferredBackBufferHeight = 1024;
             graphics.ApplyChanges();
         }
 
@@ -69,8 +70,9 @@ namespace Schematogy
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            mousePic = Content.Load<Texture2D>("Mouse_Farewell_by_nJoo");
+            
             UI.UIContentManager.getInstance().LoadContents(Content);
+            mousePic = UI.UIContentManager.getInstance().getTexture("mouse");
         }
 
         /// <summary>
@@ -93,7 +95,7 @@ namespace Schematogy
             InputHandler.Instance.Update(gameTime);
             Util.UserInputCenter.Update(this);
             testButton.Update(gameTime);
-            // TODO: Add your update logic here
+            
             mouse = Util.UserInputCenter.mouse;
             window.Update(gameTime);
             
@@ -114,7 +116,16 @@ namespace Schematogy
             
             testButton.Draw(gameTime, spriteBatch);
 
-            spriteBatch.Draw(mousePic, new Rectangle(mouse.X, mouse.Y, 32, 64), Color.White);
+            mousePic.Draw(gameTime, spriteBatch, new Rectangle(mouse.X, mouse.Y, mousePic.Width / 3, mousePic.Height / 3));
+
+            SpriteContent testAnim = UIContentManager.getInstance().getTexture("testAnim");
+            if (!rawr)
+            {
+                //testAnim.Play(gameTime);
+                rawr = true;
+            }
+            testAnim.Draw(gameTime, spriteBatch, new Rectangle(100, 100, 256, 256));
+
             spriteBatch.End();
             base.Draw(gameTime);
         }

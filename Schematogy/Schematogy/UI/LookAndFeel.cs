@@ -8,27 +8,27 @@ namespace Schematogy.UI
 {
     public abstract class LookAndFeel
     {
-        protected abstract void DrawTopLeft(Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
-        protected abstract void DrawLeft(Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
-        protected abstract void DrawBotLeft(Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
-        protected abstract void DrawBot(Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
-        protected abstract void DrawBotRight(Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
-        protected abstract void DrawRight(Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
-        protected abstract void DrawTopRight(Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
-        protected abstract void DrawTop(Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
-        protected abstract void DrawCenter(Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
+        protected abstract void DrawTopLeft(GameTime gameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
+        protected abstract void DrawLeft(GameTime gameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
+        protected abstract void DrawBotLeft(GameTime gameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
+        protected abstract void DrawBot(GameTime gameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
+        protected abstract void DrawBotRight(GameTime gameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
+        protected abstract void DrawRight(GameTime gameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
+        protected abstract void DrawTopRight(GameTime gameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
+        protected abstract void DrawTop(GameTime gameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
+        protected abstract void DrawCenter(GameTime gameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds);
 
-        public void drawBorder(Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds)
+        public void drawBorder(GameTime gameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch, Rectangle bounds)
         {
-            this.DrawCenter(spriteBatch, bounds);
-            this.DrawBot(spriteBatch, bounds);
-            this.DrawLeft(spriteBatch, bounds);
-            this.DrawRight(spriteBatch, bounds);
-            this.DrawTop(spriteBatch, bounds);
-            this.DrawTopLeft(spriteBatch, bounds);
-            this.DrawTopRight(spriteBatch, bounds);
-            this.DrawBotLeft(spriteBatch, bounds);
-            this.DrawBotRight(spriteBatch, bounds);
+            this.DrawCenter(gameTime, spriteBatch, bounds);
+            this.DrawBot(gameTime, spriteBatch, bounds);
+            this.DrawLeft(gameTime, spriteBatch, bounds);
+            this.DrawRight(gameTime, spriteBatch, bounds);
+            this.DrawTop(gameTime, spriteBatch, bounds);
+            this.DrawTopLeft(gameTime, spriteBatch, bounds);
+            this.DrawTopRight(gameTime, spriteBatch, bounds);
+            this.DrawBotLeft(gameTime, spriteBatch, bounds);
+            this.DrawBotRight(gameTime, spriteBatch, bounds);
         }
     }
 }

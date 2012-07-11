@@ -35,16 +35,16 @@ namespace Schematogy.UI
         public void Draw(Microsoft.Xna.Framework.GameTime game, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch)
         {
             Rectangle bounds = Bounds;
-            Texture2D kitteh = UIContentManager.getInstance().getTexture("rawr");
+            
 
 
             try
             {
-                lnf.drawBorder(spriteBatch, bounds);
+                lnf.drawBorder(game, spriteBatch, bounds);
             }
             catch (NotImplementedException e)
             {
-                //Console.WriteLine("You haven't implemented lnf yet!");
+                Console.WriteLine("You haven't implemented lnf yet!");
             }
         }
 

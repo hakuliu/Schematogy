@@ -2,12 +2,12 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>Mouse_Farewell_by_nJoo.jpg</Source>
-      <Name>Mouse_Farewell_by_nJoo</Name>
+      <Source>UI\Mouse_Farewell_by_nJoo.jpg</Source>
+      <Name>UI\Mouse_Farewell_by_nJoo</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Mouse_Farewell_by_nJoo.xnb</Output>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\Mouse_Farewell_by_nJoo.xnb</Output>
       <Time>2012-06-12T20:14:50.23325-04:00</Time>
     </Item>
     <Item>
@@ -47,112 +47,175 @@
       <Time>2012-06-26T19:25:09.1678426-04:00</Time>
     </Item>
     <Item>
-      <Source>BIG CHUNK.png</Source>
-      <Name>BIG CHUNK</Name>
+      <Source>UI\BIG CHUNK.png</Source>
+      <Name>UI\BIG CHUNK</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\BIG CHUNK.xnb</Output>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\BIG CHUNK.xnb</Output>
       <Time>2012-06-30T15:28:05.7106093-04:00</Time>
     </Item>
     <Item>
-      <Source>Border Chunk bottom.png</Source>
-      <Name>Border Chunk bottom</Name>
+      <Source>UI\Border Chunk bottom.png</Source>
+      <Name>UI\Border Chunk bottom</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Border Chunk bottom.xnb</Output>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\Border Chunk bottom.xnb</Output>
       <Time>2012-07-03T18:57:46.6818404-04:00</Time>
     </Item>
     <Item>
-      <Source>Border Chunk Left.png</Source>
-      <Name>Border Chunk Left</Name>
+      <Source>UI\Border Chunk Left.png</Source>
+      <Name>UI\Border Chunk Left</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Border Chunk Left.xnb</Output>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\Border Chunk Left.xnb</Output>
       <Time>2012-06-30T15:28:05.6326048-04:00</Time>
     </Item>
     <Item>
-      <Source>Border Chunk Right.png</Source>
-      <Name>Border Chunk Right</Name>
+      <Source>UI\Border Chunk top.png</Source>
+      <Name>UI\Border Chunk top</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Border Chunk Right.xnb</Output>
-      <Time>2012-07-03T18:55:04.3958932-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Border Chunk top.png</Source>
-      <Name>Border Chunk top</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Border Chunk top.xnb</Output>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\Border Chunk top.xnb</Output>
       <Time>2012-06-30T15:28:05.6436054-04:00</Time>
     </Item>
     <Item>
-      <Source>Border Chunk.png</Source>
-      <Name>Border Chunk</Name>
+      <Source>UI\Border Chunk.png</Source>
+      <Name>UI\Border Chunk</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Border Chunk.xnb</Output>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\Border Chunk.xnb</Output>
       <Time>2012-06-30T15:28:05.7216099-04:00</Time>
     </Item>
     <Item>
-      <Source>BUG CHUNK.png</Source>
-      <Name>BUG CHUNK</Name>
+      <Source>UI\BUG CHUNK.png</Source>
+      <Name>UI\BUG CHUNK</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\BUG CHUNK.xnb</Output>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\BUG CHUNK.xnb</Output>
       <Time>2012-06-30T15:28:05.6546061-04:00</Time>
     </Item>
     <Item>
-      <Source>Corner Chunk lower left.png</Source>
-      <Name>Corner Chunk lower left</Name>
+      <Source>UI\Corner Chunk lower left.png</Source>
+      <Name>UI\Corner Chunk lower left</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Corner Chunk lower left.xnb</Output>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\Corner Chunk lower left.xnb</Output>
       <Time>2012-07-03T19:42:35.8353603-04:00</Time>
     </Item>
     <Item>
-      <Source>Corner Chunk lower right.png</Source>
-      <Name>Corner Chunk lower right</Name>
+      <Source>UI\Corner Chunk lower right.png</Source>
+      <Name>UI\Corner Chunk lower right</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Corner Chunk lower right.xnb</Output>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\Corner Chunk lower right.xnb</Output>
       <Time>2012-06-30T15:28:05.6766073-04:00</Time>
     </Item>
     <Item>
-      <Source>Corner Chunk up right.png</Source>
-      <Name>Corner Chunk up right</Name>
+      <Source>UI\Corner Chunk up right.png</Source>
+      <Name>UI\Corner Chunk up right</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Corner Chunk up right.xnb</Output>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\Corner Chunk up right.xnb</Output>
       <Time>2012-06-30T15:28:05.6876079-04:00</Time>
     </Item>
     <Item>
-      <Source>Corner Chunk upper right.png</Source>
-      <Name>Corner Chunk upper right</Name>
+      <Source>UI\Corner Chunk upper right.png</Source>
+      <Name>UI\Corner Chunk upper right</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Corner Chunk upper right.xnb</Output>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\Corner Chunk upper right.xnb</Output>
       <Time>2012-06-30T15:28:05.6986086-04:00</Time>
     </Item>
     <Item>
-      <Source>NO BUTTON PAUL.png</Source>
-      <Name>NO BUTTON PAUL</Name>
+      <Source>UI\Border Chunk Right.png</Source>
+      <Name>UI\Border Chunk Right</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\NO BUTTON PAUL.xnb</Output>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\Border Chunk Right.xnb</Output>
+      <Time>2012-07-03T18:55:04.3958932-04:00</Time>
+    </Item>
+    <Item>
+      <Source>UI\NO BUTTON PAUL.png</Source>
+      <Name>UI\NO BUTTON PAUL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\NO BUTTON PAUL.xnb</Output>
       <Time>2012-07-03T19:10:49.7130924-04:00</Time>
+    </Item>
+    <Item>
+      <Source>UI\Cursor mouse.png</Source>
+      <Name>UI\Cursor mouse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\Cursor mouse.xnb</Output>
+      <Time>2012-07-05T19:16:56.5112285-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animations\lyn_bladelord_sword.png</Source>
+      <Name>Animations\lyn_bladelord_sword</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Animations\lyn_bladelord_sword.xnb</Output>
+      <Time>2012-07-05T19:29:54.8849353-04:00</Time>
+    </Item>
+    <Item>
+      <Source>UI\Corner Chunk lower left2.png</Source>
+      <Name>UI\Corner Chunk lower left2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\Corner Chunk lower left2.xnb</Output>
+      <Time>2012-07-05T19:43:27.4252836-04:00</Time>
+    </Item>
+    <Item>
+      <Source>UI\Corner Chunk lower left3.png</Source>
+      <Name>UI\Corner Chunk lower left3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\Corner Chunk lower left3.xnb</Output>
+      <Time>2012-07-05T19:46:16.0108482-04:00</Time>
+    </Item>
+    <Item>
+      <Source>UI\Corner Chunk lower left4.png</Source>
+      <Name>UI\Corner Chunk lower left4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\Corner Chunk lower left4.xnb</Output>
+      <Time>2012-07-05T20:06:36.8652514-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animations\test sprite sheet.png</Source>
+      <Name>Animations\test sprite sheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Animations\test sprite sheet.xnb</Output>
+      <Time>2012-07-10T19:58:57.7972692-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animations\test sprite sheet2.png</Source>
+      <Name>Animations\test sprite sheet2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Animations\test sprite sheet2.xnb</Output>
+      <Time>2012-07-10T20:16:49.8482166-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

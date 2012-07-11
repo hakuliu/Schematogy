@@ -35,7 +35,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mouse_Farewell_by_nJoo.jpg">
+    <Compile Include="UI\Mouse_Farewell_by_nJoo.jpg">
       <Name>Mouse_Farewell_by_nJoo</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
@@ -64,67 +64,293 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BIG CHUNK.png">
+    <Compile Include="UI\BIG CHUNK.png">
       <Name>BIG CHUNK</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Border Chunk bottom.png">
+    <Compile Include="UI\Border Chunk bottom.png">
       <Name>Border Chunk bottom</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Border Chunk Left.png">
+    <Compile Include="UI\Border Chunk Left.png">
       <Name>Border Chunk Left</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Border Chunk top.png">
+    <Compile Include="UI\Border Chunk top.png">
       <Name>Border Chunk top</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Border Chunk.png">
+    <Compile Include="UI\Border Chunk.png">
       <Name>Border Chunk</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="BUG CHUNK.png">
+    <Compile Include="UI\BUG CHUNK.png">
       <Name>BUG CHUNK</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Corner Chunk lower left.png">
+    <Compile Include="UI\Corner Chunk lower left.png">
       <Name>Corner Chunk lower left</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Corner Chunk lower right.png">
+    <Compile Include="UI\Corner Chunk lower right.png">
       <Name>Corner Chunk lower right</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Corner Chunk up right.png">
+    <Compile Include="UI\Corner Chunk up right.png">
       <Name>Corner Chunk up right</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Corner Chunk upper right.png">
+    <Compile Include="UI\Corner Chunk upper right.png">
       <Name>Corner Chunk upper right</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Border Chunk Right.png">
+    <Compile Include="UI\Border Chunk Right.png">
       <Name>Border Chunk Right</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NO BUTTON PAUL.png">
+    <Compile Include="UI\NO BUTTON PAUL.png">
       <Name>NO BUTTON PAUL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UI\Cursor mouse.png">
+      <Name>Cursor mouse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\lyn_bladelord_sword.png">
+      <Name>lyn_bladelord_sword</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UI\Corner Chunk lower left2.png">
+      <Name>Corner Chunk lower left2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UI\Corner Chunk lower left3.png">
+      <Name>Corner Chunk lower left3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UI\Corner Chunk lower left4.png">
+      <Name>Corner Chunk lower left4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\test sprite sheet.png">
+      <Name>test sprite sheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\test sprite sheet2.png">
+      <Name>test sprite sheet2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buttons\Button Battery blanked out.png">
+      <Name>Button Battery blanked out</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Battery hover over on.png">
+      <Name>Button Battery hover over on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Battery regular.png">
+      <Name>Button Battery regular</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Capacitor happy blanked out.png">
+      <Name>Button Capacitor happy blanked out</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Capacitor happy clicked on.png">
+      <Name>Button Capacitor happy clicked on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Capacitor happy hover over on.png">
+      <Name>Button Capacitor happy hover over on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Capacitor happy regular.png">
+      <Name>Button Capacitor happy regular</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Diode blanked out.png">
+      <Name>Button Diode blanked out</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Diode clicked on.png">
+      <Name>Button Diode clicked on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button diode hover over on.png">
+      <Name>Button diode hover over on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button diode regular.png">
+      <Name>Button diode regular</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Inductor blanked out.png">
+      <Name>Button Inductor blanked out</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Inductor clicked on.png">
+      <Name>Button Inductor clicked on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Inductor hover over on.png">
+      <Name>Button Inductor hover over on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Inductor regular.png">
+      <Name>Button Inductor regular</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button LED blanked out.png">
+      <Name>Button LED blanked out</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button LED clicked on.png">
+      <Name>Button LED clicked on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button LED hover over on.png">
+      <Name>Button LED hover over on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button LED regular .png">
+      <Name>Button LED regular</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Old Capacitor blanked out.png">
+      <Name>Button Old Capacitor blanked out</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Old Capacitor clicked on.png">
+      <Name>Button Old Capacitor clicked on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Old Capacitor hover over on.png">
+      <Name>Button Old Capacitor hover over on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Old Capacitor regular.png">
+      <Name>Button Old Capacitor regular</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Op Amp blanked out.png">
+      <Name>Button Op Amp blanked out</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Op amp clicked on.png">
+      <Name>Button Op amp clicked on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Op Amp hover over on.png">
+      <Name>Button Op Amp hover over on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Op amp regular.png">
+      <Name>Button Op amp regular</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Resistor blanked out.png">
+      <Name>Button Resistor blanked out</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Resistor clicked on.png">
+      <Name>Button Resistor clicked on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Resistor hover over on.png">
+      <Name>Button Resistor hover over on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Resistor regular.png">
+      <Name>Button Resistor regular</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Transistor blanked out.png">
+      <Name>Button Transistor blanked out</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Transistor clicked on.png">
+      <Name>Button Transistor clicked on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Transistor hover over on.png">
+      <Name>Button Transistor hover over on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Buttons\Button Transistor regular.png">
+      <Name>Button Transistor regular</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
