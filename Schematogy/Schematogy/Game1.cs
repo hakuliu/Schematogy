@@ -41,7 +41,7 @@ namespace Schematogy
             testButton.PressDownEnabled = true;
             testButton.IdleTexture = "ResistorButtonIdle";
             testButton.HoverTexture = "ResistorButtonHover";
-            testButton.PressetTexture = "ResistorButtonPressed";
+            testButton.PressedTexture = "ResistorButtonPressed";
 
         }
 

@@ -14,9 +14,12 @@ namespace Schematogy.UI
 
         private bool hoverEnabled = false;
         private bool pressDownEnabled = false;
+        private bool enabled = false;
         private String idleTexture = "MissingImageButton";
         private String hoverTexture = "MissingImageButton";
         private String pressedTexture = "MissingImageButton";
+        private String disabledTexture = "MissingImageButton";
+
 
         private enum MyButtonState { Idle, Hover, Pressed };
         private MyButtonState imgState;
@@ -73,9 +76,11 @@ namespace Schematogy.UI
 
         public bool HoverEnabled { get { return hoverEnabled; } set { hoverEnabled = value; } }
         public bool PressDownEnabled { get { return pressDownEnabled; } set { pressDownEnabled = value; } }
+        public bool Enabled { get { return enabled; } set { enabled = value; } }
         public String IdleTexture { get { return idleTexture; } set { idleTexture = value; } }
         public String HoverTexture { get { return hoverTexture; } set { hoverTexture = value; } }
-        public String PressetTexture { get { return pressedTexture; } set { pressedTexture = value; } }
+        public String PressedTexture { get { return pressedTexture; } set { pressedTexture = value; } }
+        public String DisabledTexture { get { return disabledTexture; } set { disabledTexture = value;}}
 
         public override void Update(GameTime gameTime)
         {
@@ -95,7 +100,7 @@ namespace Schematogy.UI
             }
             else if (imgState == MyButtonState.Pressed && PressDownEnabled)
             {
-                imgToDraw = UIContentManager.getInstance().getTexture(PressetTexture);
+                imgToDraw = UIContentManager.getInstance().getTexture(PressedTexture);
             }
             imgToDraw.Draw(game, spriteBatch, Bound);
         }

@@ -38,10 +38,6 @@ namespace Schematogy.UI
             spriteCache.Add("mouse", new SpriteContent(Content.Load<Texture2D>("UI/Cursor mouse")));
 
 
-            spriteCache.Add("ResistorButtonIdle", new SpriteContent(Content.Load<Texture2D>("Button Resistor regular")));
-            spriteCache.Add("ResistorButtonHover", new SpriteContent(Content.Load<Texture2D>("Button Resistor hover over on")));
-            spriteCache.Add("ResistorButtonPressed", new SpriteContent(Content.Load<Texture2D>("Button Resistor clicked on")));
-
             spriteCache.Add("CornerChunkUpperLeft", new SpriteContent(Content.Load<Texture2D>("UI/Corner Chunk up right")));
             spriteCache.Add("CornerChunkUpperRight", new SpriteContent(Content.Load<Texture2D>("UI/Corner Chunk upper right")));
             spriteCache.Add("CornerChunkLowerLeft", new SpriteContent(Content.Load<Texture2D>("UI/Corner Chunk lower left4")));
