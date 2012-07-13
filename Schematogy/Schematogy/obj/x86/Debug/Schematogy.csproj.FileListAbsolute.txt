@@ -35,3 +35,40 @@ C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Deb
 C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\UI\Corner Chunk lower left4.xnb
 C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Animations\test sprite sheet.xnb
 C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Animations\test sprite sheet2.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button LED blanked out.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Capacitor happy regular.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Inductor clicked on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\grid.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Old Capacitor regular.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Diode blanked out.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Transistor blanked out.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Resistor clicked on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Capacitor happy blanked out.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Op Amp hover over on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Op Amp blanked out.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Op amp clicked on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button LED regular.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Transistor hover over on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button LED clicked on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Battery regular.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Resistor regular.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Inductor hover over on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Op amp regular.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Transistor clicked on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Resistor hover over on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Transistor regular.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Battery blanked out.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Resistor blanked out.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Inductor regular.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Inductor blanked out.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\grid2.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Diode clicked on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button diode regular.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button diode hover over on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Old Capacitor blanked out.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Battery hover over on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Old Capacitor clicked on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button LED hover over on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Old Capacitor hover over on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Capacitor happy hover over on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Capacitor happy clicked on.xnb

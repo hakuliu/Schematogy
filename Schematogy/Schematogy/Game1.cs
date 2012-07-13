@@ -27,13 +27,14 @@ namespace Schematogy
         SpriteContent mousePic;
         UI.WindowFrame window;
         Button testButton;
+        Grid theGrid;
         bool rawr = false;
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             window = new UI.WindowFrame();
-
+            theGrid = new Grid();
             testButton = new Button();
             testButton.Bound = new Rectangle(500, 500, 100, 100);
             testButton.Enabled = true;
@@ -118,13 +119,8 @@ namespace Schematogy
 
             mousePic.Draw(gameTime, spriteBatch, new Rectangle(mouse.X, mouse.Y, mousePic.Width / 3, mousePic.Height / 3));
 
-            SpriteContent testAnim = UIContentManager.getInstance().getTexture("testAnim");
-            if (!rawr)
-            {
-                //testAnim.Play(gameTime);
-                rawr = true;
-            }
-            testAnim.Draw(gameTime, spriteBatch, new Rectangle(100, 100, 256, 256));
+
+            theGrid.Draw(gameTime, spriteBatch);
 
             spriteBatch.End();
             base.Draw(gameTime);

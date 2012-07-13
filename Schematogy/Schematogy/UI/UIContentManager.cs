@@ -28,7 +28,7 @@ namespace Schematogy.UI
             spriteCache = new Dictionary<string, SpriteContent>();
         }
 
-        Dictionary<String, SpriteContent> spriteCache;
+        public Dictionary<String, SpriteContent> spriteCache;
 
         #region UsesContentManger Members
 
@@ -53,7 +53,9 @@ namespace Schematogy.UI
             spriteCache.Add("MissingImageButton", new SpriteContent(Content.Load<Texture2D>("UI/NO BUTTON PAUL")));
 
 
-            
+            spriteCache.Add("GridIdle", new SpriteContent(Content.Load<Texture2D>("grid")));
+
+            Util.Factories.ButtonFactory.initAllResources(Content, spriteCache);
         }
 
         public void UnloadContents(Microsoft.Xna.Framework.Content.ContentManager Content)

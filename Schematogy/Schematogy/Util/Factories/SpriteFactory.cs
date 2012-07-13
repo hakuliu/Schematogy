@@ -10,9 +10,9 @@ namespace Schematogy.Util.Factories
 {
     public class SpriteFactory
     {
-        public static void loadAllSpriteContents(ContentManager Content, Dictionary<String, SpriteContent> spriteCache)
-        {
-            spriteCache.Add("testAnim", new SpriteContent(Content.Load<Texture2D>("Animations/test sprite sheet2"), new Rectangle(0, 0, 128, 128), 12, 12, 1));
-        }
+        //public static D loadAllSpriteContents(ContentManager Content, Dictionary<String, SpriteContent> spriteCache)
+        //{
+        //    spriteCache.Add("testAnim", new SpriteContent(Content.Load<Texture2D>("Animations/test sprite sheet2"), new Rectangle(0, 0, 128, 128), 12, 12, 1));
+        //}
     }
 }

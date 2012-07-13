@@ -14,9 +14,9 @@ namespace Schematogy.Util.Factories
         public static void initAllResources(ContentManager Content, Dictionary<string, SpriteContent> spriteCache)
         {
             spriteCache.Add("ResistorButtonIdle", new SpriteContent(Content.Load<Texture2D>("Buttons/Button Resistor regular")));
-            spriteCache.Add("ResistorButtonHover", new SpriteContent(Content.Load<Texture2D>("Buttons/Button Resistor hover")));
-            spriteCache.Add("ResistorButtonPressed", new SpriteContent(Content.Load<Texture2D>("Buttons/Button Resistor clicked")));
-            spriteCache.Add("ResistorButtonDisabled", new SpriteContent(Content.Load<Texture2D>("Buttons/Button Resistor disabled")));
+            spriteCache.Add("ResistorButtonHover", new SpriteContent(Content.Load<Texture2D>("Buttons/Button Resistor hover over on")));
+            spriteCache.Add("ResistorButtonPressed", new SpriteContent(Content.Load<Texture2D>("Buttons/Button Resistor clicked on")));
+            spriteCache.Add("ResistorButtonDisabled", new SpriteContent(Content.Load<Texture2D>("Buttons/Button Resistor blanked out")));
 
 
         }
