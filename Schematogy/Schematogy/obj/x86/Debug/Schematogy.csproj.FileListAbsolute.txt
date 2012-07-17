@@ -72,3 +72,5 @@ C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Deb
 C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Old Capacitor hover over on.xnb
 C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Capacitor happy hover over on.xnb
 C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Buttons\Button Capacitor happy clicked on.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\grid translucent.xnb
+C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Unmoving background.xnb

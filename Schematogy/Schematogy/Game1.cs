@@ -25,6 +25,7 @@ namespace Schematogy
         SpriteBatch spriteBatch;
         MouseState mouse;
         SpriteContent mousePic;
+        SpriteContent BG;
         UI.WindowFrame window;
         Button testButton;
         Grid theGrid;
@@ -61,6 +62,8 @@ namespace Schematogy
             graphics.PreferredBackBufferWidth = 1600;
             graphics.PreferredBackBufferHeight = 1024;
             graphics.ApplyChanges();
+
+            GridLoader.LoadFromFile("Map1.txt");
         }
 
         /// <summary>
@@ -74,8 +77,9 @@ namespace Schematogy
             
             UI.UIContentManager.getInstance().LoadContents(Content);
             mousePic = UI.UIContentManager.getInstance().getTexture("mouse");
+            BG = UI.UIContentManager.getInstance().getTexture("BG");
         }
-
+         
         /// <summary>
         /// UnloadContent will be called once per game and is the place to unload
         /// all content.
@@ -98,8 +102,8 @@ namespace Schematogy
             testButton.Update(gameTime);
             
             mouse = Util.UserInputCenter.mouse;
-            window.Update(gameTime);
-            
+            //window.Update(gameTime);
+            theGrid.Update(gameTime);
             base.Update(gameTime);
         }
 
@@ -111,17 +115,19 @@ namespace Schematogy
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
+
+
             // TODO: Add your drawing code here
             spriteBatch.Begin();
-            window.Draw(gameTime, spriteBatch);
+            BG.Draw(gameTime, spriteBatch, new Rectangle(0, 0, 1600, 1024));
+
+            //window.Draw(gameTime, spriteBatch);
             
             testButton.Draw(gameTime, spriteBatch);
 
-            mousePic.Draw(gameTime, spriteBatch, new Rectangle(mouse.X, mouse.Y, mousePic.Width / 3, mousePic.Height / 3));
-
 
             theGrid.Draw(gameTime, spriteBatch);
-
+            mousePic.Draw(gameTime, spriteBatch, new Rectangle(mouse.X, mouse.Y, mousePic.Width / 3, mousePic.Height / 3));
             spriteBatch.End();
             base.Draw(gameTime);
         }

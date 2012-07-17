@@ -34,6 +34,8 @@ namespace Schematogy.UI
 
         public void LoadContents(Microsoft.Xna.Framework.Content.ContentManager Content)
         {
+            spriteCache.Add("BG", new SpriteContent(Content.Load<Texture2D>("Unmoving background")));
+
             spriteCache.Add("rawr", new SpriteContent(Content.Load<Texture2D>("UI/Mouse_Farewell_by_nJoo")));
             spriteCache.Add("mouse", new SpriteContent(Content.Load<Texture2D>("UI/Cursor mouse")));
 
@@ -54,6 +56,7 @@ namespace Schematogy.UI
 
 
             spriteCache.Add("GridIdle", new SpriteContent(Content.Load<Texture2D>("grid")));
+            spriteCache.Add("GridHover", new SpriteContent(Content.Load<Texture2D>("grid translucent")));
 
             Util.Factories.ButtonFactory.initAllResources(Content, spriteCache);
         }

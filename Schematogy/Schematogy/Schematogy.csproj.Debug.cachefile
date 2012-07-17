@@ -21,6 +21,7 @@ Content\Buttons\Button Battery regular.xnb
 Content\UI\Border Chunk top.xnb
 Content\UI\BIG CHUNK.xnb
 Content\UI\Corner Chunk lower left.xnb
+Content\grid translucent.xnb
 Content\Animations\test sprite sheet2.xnb
 Content\UI\Border Chunk Right.xnb
 Content\Buttons\Button Resistor regular.xnb
@@ -28,6 +29,7 @@ Content\UI\Border Chunk bottom.xnb
 Content\UI\Cursor mouse.xnb
 Content\Buttons\Button Inductor hover over on.xnb
 Content\Buttons\Button Op amp regular.xnb
+Content\Unmoving background.xnb
 Content\Buttons\Button Transistor clicked on.xnb
 Content\Buttons\Button Resistor hover over on.xnb
 Content\Buttons\Button Transistor regular.xnb

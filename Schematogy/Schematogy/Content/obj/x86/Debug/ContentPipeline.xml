@@ -550,6 +550,24 @@
       <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\grid2.xnb</Output>
       <Time>2012-07-12T20:08:27.9492836-04:00</Time>
     </Item>
+    <Item>
+      <Source>grid translucent.png</Source>
+      <Name>grid translucent</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\grid translucent.xnb</Output>
+      <Time>2012-07-16T20:49:38.4046057-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Unmoving background.png</Source>
+      <Name>Unmoving background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Paul\Documents\GitHub\blah\Schematogy\Schematogy\Schematogy\bin\x86\Debug\Content\Unmoving background.xnb</Output>
+      <Time>2012-07-16T21:26:28.7320292-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
